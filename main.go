@@ -1,4 +1,4 @@
-//[Your Name Here]
+//Mason DeHoff
 //COSC 3750
 //[Date Here]
 //
@@ -14,43 +14,48 @@ package main
 
 import (
 	"fmt"
-	/*"hw01/ds" */ //this needs to be changes to your module name and uncommented
+	"hw1-linked-lists/ds"
 )
 
 func main() {
-	fmt.Println("Only here so the import doesn't leave an error")
+	fmt.Println("Linked List Test:")
 
-	//linkedlist := &ds.LinkedList{}
-	//linkedlist.InsertAt(0, "first")
-	//linkedlist.Insert("first")
-	//linkedlist.Insert("first")
-	//linkedlist.Insert("second")
-	//linkedlist.Insert("third")
-	//linkedlist.Insert("fourth")
-	//linkedlist.Insert("fifth")
-	//linkedlist.RemoveAt(4)
-	//linkedlist.PrintList()
-	//fmt.Println("The size of the linked list is:", linkedlist.GetSize())
-	//fmt.Println("-------------")
-	//linkedlist.RemoveAll("first")
-	//linkedlist.PrintList()
-	//fmt.Println("-------------")
-	//linkedlist.Reverse()
-	//linkedlist.PrintList()
-	//fmt.Println("The size of the linked list is:", linkedlist.GetSize())
-	//fmt.Println("-------------")
+	linkedlist := &ds.LinkedList{}
+	linkedlist.InsertAt(0, "first")
+	linkedlist.Insert("first")
+	linkedlist.Insert("first")
+	linkedlist.Insert("second")
+	linkedlist.Insert("third")
+	linkedlist.Insert("first")
+	linkedlist.Insert("fourth")
+	linkedlist.Insert("fifth")
+	linkedlist.RemoveAt(4)
+	linkedlist.PrintList()
+	fmt.Println("The size of the linked list is:", linkedlist.GetSize())
+	fmt.Println("-------------")
+	linkedlist.RemoveAll("first")
+	linkedlist.PrintList()
+	fmt.Println("-------------")
+	linkedlist.Reverse()
+	linkedlist.PrintList()
+	fmt.Println("The size of the linked list is:", linkedlist.GetSize())
+	fmt.Println("-------------")
 
-	//stack := &ds.Stack{}
-	//stack.Push("first")
-	//stack.Push("second")
-	//stack.Push("third")
-	//data, _ := stack.Pop()
-	//println("Popped from stack:", data)
+	fmt.Println("Stack Test:")
+	stack := &ds.Stack{}
+	stack.StackPush("first")
+	stack.StackPush("second")
+	stack.StackPush("third")
+	data, _ := stack.StackPop()
+	println("Popped from stack:", data)
+	fmt.Println("-------------")
 
-	//queue := &ds.Queue{}
-	//queue.Push("first")
-	//queue.Push("second")
-	//queue.Push("third")
-	//data, _ = queue.Pop()
-	//println("Popped from queue:", data)
+	fmt.Println("Queue Test:")
+	queue := &ds.Queue{}
+	queue.QueuePush("first")
+	queue.QueuePush("second")
+	queue.QueuePush("third")
+	data, _ = queue.QueuePop()
+	println("Popped from queue:", data)
+	fmt.Println("-------------")
 }
