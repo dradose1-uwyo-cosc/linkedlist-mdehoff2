@@ -16,6 +16,7 @@
 
 ## Output Screenshots
 On Mac:
-![Mac Output](screenshots/claude-vmhelp.jpeg)
+![Mac Output](screenshots/mac-output.jpeg)
 
 On Linux VM:
+![Linux VM Output](screenshots/linux-vim-output.jpeg)
