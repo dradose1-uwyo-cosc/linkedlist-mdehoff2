@@ -19,4 +19,4 @@ On Mac:
 ![Mac Output](screenshots/mac-output.jpeg)
 
 On Linux VM:
-![Linux VM Output](screenshots/linux-vim-output.jpeg)
+![Linux VM Output](screenshots/linux-vm-output.jpeg)
